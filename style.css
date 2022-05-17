@@ -1,0 +1,81 @@
+:root{
+    --primary-color: pink;
+    --secondary-color: gold;
+    --tertiary-color: lime;
+    --font-color: black;
+    --font-choice: Georgia;
+}
+*{
+    background-color: var(--primary-color);
+    font-family: var(--font-choice), "Trebuchet MS", Verdana, sans-serif;
+}
+
+/* header */
+header{
+    /* z-index: 9999;
+    position:-webkit-sticky;
+    position: sticky; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header h1{
+    font-weight: bolder;
+    text-align: center;
+    font-size:40px;
+    margin-bottom:10px;
+}
+header a{
+    text-decoration:none;
+    color: var(--font-color);
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    font-size:20px;
+    margin-bottom: 0;
+    align-items: center;
+}
+header nav ul li a:hover{
+    font-style: italic;
+    color:var(--font-color);
+}
+header nav ul li{
+    border-bottom: 1px solid black;
+    padding-bottom:5px;
+    margin:0 auto 35px auto;
+}
+
+/* hero */
+.hero{
+    background-image: url("images/istockphoto-518023072-170667a.jpg");
+    background-size: cover;
+    height:330px;
+    width:100%;
+    display:flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.hero p{
+    color:var(--font-color);
+    background: none;
+    font-size:35px;
+    margin-right: 20px;
+}
+
+/* about me */
+.about-me{
+    display: flex;
+    margin:10px;
+}
+#about-me{
+    flex:1 0 20%;
+    border-right: 1px solid black;
+}
+.about-me p{
+    margin-left: 20px;
+}
+
+/* projects */

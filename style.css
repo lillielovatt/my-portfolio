@@ -70,12 +70,135 @@ header nav ul li{
     display: flex;
     margin:10px;
 }
-#about-me{
-    flex:1 0 20%;
+.about-me h2{
+    /* flex:1 0 20%; */
     border-right: 1px solid black;
+    flex: 20%;
+    font-size: 28px;
+    text-align: right;
+    padding-right: 15px;
 }
 .about-me p{
     margin-left: 20px;
+    flex:70%;
 }
 
 /* projects */
+.projects{
+    display:flex;
+    margin:10px;
+    align-items: center;
+}
+.projects h2{
+    border-right: 1px solid black;
+    flex: 20%;
+    font-size: 28px;
+    text-align: right;
+    padding-right: 15px;
+}
+.each_project{
+    display: flex;
+    flex: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.single-project h3{
+    background: none;
+    text-decoration: none;
+}
+.single-project a{
+    text-decoration: none;
+    /* why didn't this work? */
+}
+.project1{
+    flex-basis:100%; 
+    /* Why didnt this work?? */
+}
+.project1{
+    background-image: url(./images/project1.webp);
+}
+.project2{
+    background-image: url(./images/project2.jpg);
+}
+.project3{
+    background-image: url(./images/project3.webp);
+}
+.project4{
+    background-image: url(./images/project4.jpg);
+}
+.project5{
+    background-image: url(./images/project5.jpg);
+}
+
+
+
+
+/* footer */
+.contact-me{
+    display:flex;
+    margin:10px;
+    align-items: center;
+}
+.contact-me h2{
+    border-right: 1px solid black;
+    flex: 20%;
+    font-size: 28px;
+    text-align: right;
+    padding-right: 15px;
+}
+.contact-me > div{
+    flex: 70%;
+}
+.links{
+    display:flex;
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.links a{
+    text-decoration: none;
+    color:black;
+    padding: 20px 20px 20px 20px;
+}
+
+.contact-me a:hover{
+    font-style: italic;
+    background-color: palevioletred;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+
+
+/* media queries */
+
+@media screen and (min-width:575px){
+    /* I tried to do a mobile-first design strategy so this doesn't need to be adjusted */
+}
+@media screen and (min-width:768px){
+    /* Looks moderately decent at this size */
+}
+@media screen and (min-width:980px){
+    header h1{
+        font-size: 50px;
+    }
+    header nav ul li a{
+        font-size:24px;
+    }
+    .hero p{
+        font-size:45px;
+        margin-bottom: 5px;
+    }
+    .about-me h2{
+        font-size: 38px;
+    }
+    .contact-me h2{
+        font-size: 38px;
+    }
+    .projects h2{
+        font-size: 38px;
+    }
+    .about-me p{
+        font-size:18px;
+    }
+}
